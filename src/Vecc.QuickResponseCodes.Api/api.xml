@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Vecc.QuickResponseCodes.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Vecc.QuickResponseCodes.Api.Controllers.QuickResponseCodeController">
+            <summary>
+                Generate QR Codes
+            </summary>
+        </member>
+        <member name="M:Vecc.QuickResponseCodes.Api.Controllers.QuickResponseCodeController.GetQrCode(Vecc.QuickResponseCodes.Api.Models.GetQrCodeRequest)">
+            <summary>
+                Returns a QR code representing the specified request
+            </summary>
+            <param name="request">Data to use to generate the QR code and the resulting format</param>
+            <returns>A response with the correct mime-type of the image and the binary data.</returns>
+        </member>
+        <member name="T:Vecc.QuickResponseCodes.Api.Models.ErrorToleranceLevel">
+            <summary>
+                Error tolerances
+            </summary>
+        </member>
+        <member name="F:Vecc.QuickResponseCodes.Api.Models.ErrorToleranceLevel.VeryLow">
+            <summary>
+                Allows 7% data loss.
+            </summary>
+        </member>
+        <member name="F:Vecc.QuickResponseCodes.Api.Models.ErrorToleranceLevel.Low">
+            <summary>
+                Allows 15% data loss.
+            </summary>
+        </member>
+        <member name="F:Vecc.QuickResponseCodes.Api.Models.ErrorToleranceLevel.Medium">
+            <summary>
+                Allows 25% data loss.
+            </summary>
+        </member>
+        <member name="F:Vecc.QuickResponseCodes.Api.Models.ErrorToleranceLevel.High">
+            <summary>
+                Allows 30% data loss.
+            </summary>
+        </member>
+    </members>
+</doc>
