@@ -53,7 +53,10 @@ namespace Vecc.QuickResponseCodes.Api
             loggerFactory.AddDebug();
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api - v1"); });
+            app.UseSwaggerUI(c =>
+                             {
+                                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api - v1");
+                             });
 
             app.UseMvc();
         }
